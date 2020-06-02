@@ -2700,7 +2700,7 @@ operator<<(
       os.setstate(_ostream_type::badbit | _ostream_type::failbit);
     }
   }
-#elif defined(_MSC_VER) || defined(__ORBIS__)
+#elif defined(_MSC_VER) || defined(__ORBIS__) || defined(__PROSPERO__)
   typedef decltype(os.precision()) streamsize;
   // MSVC doesn't define __ostream_insert
   os.write(str.data(), static_cast<streamsize>(str.size()));

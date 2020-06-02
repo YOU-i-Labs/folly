@@ -33,7 +33,7 @@
 #include <jemalloc/jemalloc.h> // @manual
 #endif
 #else
-#if !defined(__FreeBSD__) && !defined(__ORBIS__)
+#if !defined(__FreeBSD__) && !defined(__ORBIS__) && !defined(__PROSPERO__)
 #if __has_include(<malloc.h>)
 #include <malloc.h>
 #endif

@@ -60,7 +60,7 @@ information and acquired knowledge:
 #       if BOOST_OS_MACOS
 #           include <machine/endian.h>
 #       else
-#           if BOOST_OS_BSD && !defined(__ORBIS__)
+#           if BOOST_OS_BSD && !defined(__ORBIS__) && !defined(__PROSPERO__)
 #               if BOOST_OS_BSD_OPEN
 #                   include <machine/endian.h>
 #               else
