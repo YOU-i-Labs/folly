@@ -383,6 +383,10 @@ hunter_add_package(glog)
 find_package(glog CONFIG REQUIRED)
 target_link_libraries(folly_deps INTERFACE glog::glog)
 
+hunter_add_package(fmt)
+find_package(fmt CONFIG REQUIRED)
+target_link_libraries(folly_deps INTERFACE fmt::fmt)
+
 option(USE_HUNTER_BOOST "help string describing USE_HUNTER_BOOST" OFF)
 if (USE_HUNTER_BOOST)
   hunter_add_package(Boost)
